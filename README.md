@@ -16,7 +16,7 @@
 
 ```html
 <!-- Feather Icons -->
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
 
 <!-- Modern Alert -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PesonaCoding/modern-alert@main/modern-alert.css">
