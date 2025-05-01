@@ -32,7 +32,7 @@
   ModernAlert.show({
     type: "warning",
     title: "Peringatan",
-    message: "Pesan diisi"
+    message: "Pesan"
   })
 </script>
 ```
