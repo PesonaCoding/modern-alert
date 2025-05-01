@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --success-color: #48bb78;
+    --error-color: #f56565;
+    --warning-color: #ed8936;
+    --info-color: #4299e1;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modern-alert-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.modern-alert {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    margin-bottom: 12px;
+    min-width: 280px;
+    max-width: 450px;
+    width: 100%;
+    pointer-events: auto;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease;
+    position: relative;
+}
+
+.modern-alert.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modern-alert-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.modern-alert-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    stroke-width: 2.5;
+}
+
+.modern-alert-content {
+    flex-grow: 1;
+}
+
+.modern-alert-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #2d3748;
+}
+
+.modern-alert-message {
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modern-alert-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #a0aec0;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    transition: color 0.2s;
+}
+
+.modern-alert-close:hover {
+    color: #4a5568;
+}
+
+.modern-alert-progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 0 0 12px 12px;
+    width: 100%;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.modern-alert-success .modern-alert-icon,
+.modern-alert-success .modern-alert-progress {
+    background-color: var(--success-color);
+}
+
+.modern-alert-error .modern-alert-icon,
+.modern-alert-error .modern-alert-progress {
+    background-color: var(--error-color);
+}
+
+.modern-alert-warning .modern-alert-icon,
+.modern-alert-warning .modern-alert-progress {
+    background-color: var(--warning-color);
+}
+
+.modern-alert-info .modern-alert-icon,
+.modern-alert-info .modern-alert-progress {
+    background-color: var(--info-color);
+}
+
+@media (max-width: 500px) {
+    .modern-alert {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
