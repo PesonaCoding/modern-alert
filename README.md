@@ -29,7 +29,7 @@
 
 ```html
 <script>
-  showAlert('success', 'Berhasil!', 'Data telah disimpan.');
+  ModernAlert.show('success', 'Berhasil!', 'Data telah disimpan.');
 </script>
 ```
 
