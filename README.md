@@ -23,15 +23,9 @@
 <script src="https://cdn.jsdelivr.net/gh/PesonaCoding/modern-alert@main/modern-alert.js"></script>
 ```
 
-2. **Tambahkan Container di Body:**
-
-```html
-<div class="modern-alert-container" id="alertContainer"></div>
-```
-
 ---
 
-3. **Panggil Alert di JavaScript:**
+2. **Panggil Alert di JavaScript:**
 
 ```html
 <script>
