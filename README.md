@@ -35,10 +35,10 @@
 
 ---
 
-## 🧠 Parameter Fungsi `showAlert()`
+## 🧠 Parameter Fungsi `ModernAlert.show()`
 
 ```js
-showAlert(type, title, message, duration);
+ModernAlert.show(type, title, message, duration);
 ```
 
 | Parameter | Tipe     | Keterangan                                  |
